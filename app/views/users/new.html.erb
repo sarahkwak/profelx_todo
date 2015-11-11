@@ -1,0 +1,6 @@
+<%= form_for :user, url: {action: "create"} do |f| %>
+  First Name: <%= f.text_field :first_name %>
+  Last Name: <%= f.text_field :last_name %>
+  Email: <%= f.email_field :email %>
+  <%= f.submit :submit %>
+<% end %>
